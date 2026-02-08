@@ -1,0 +1,19 @@
+# Credentials
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Data (database + browser state)
+data/
+
+# Playwright MCP
+.playwright-mcp/
+
+# Temp/debug scripts
+_*.py
+
+# Windows
+NDH6SA~M
+Thumbs.db
