@@ -1,0 +1,100 @@
+/* Filter sidebar */
+#filter-sidebar .filter-body {
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+}
+
+#filter-sidebar .choices__inner {
+    font-size: 0.85rem;
+    min-height: 36px;
+}
+
+/* Charts - resizable containers */
+.chart-resize-container {
+    resize: vertical;
+    overflow: hidden;
+    min-height: 250px;
+    height: 340px;
+}
+
+#line-chart, #combo-chart {
+    width: 100%;
+    height: 100%;
+}
+
+/* Tables */
+.dataTables_wrapper .dt-buttons {
+    margin-bottom: 0.5rem;
+}
+
+#rollup-table, #raw-table {
+    font-size: 0.82rem;
+}
+
+/* Invoice */
+.invoice-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.invoice-header h3 {
+    color: #2c3e50;
+}
+
+.invoice-summary {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.property-section h6 {
+    background-color: #e9ecef !important;
+}
+
+/* Combo chart selects in header */
+#combo-bar-select, #combo-line-select {
+    font-size: 0.78rem;
+    padding: 2px 6px;
+    max-width: 140px;
+}
+
+/* Print styles */
+@media print {
+    .navbar, #filter-sidebar, .no-print, #mainTabs,
+    .dt-buttons, .dataTables_filter, .dataTables_info, .dataTables_paginate,
+    .dataTables_length {
+        display: none !important;
+    }
+
+    #dashboard-pane {
+        display: none !important;
+    }
+
+    #invoice-pane {
+        display: block !important;
+        opacity: 1 !important;
+    }
+
+    .invoice-page {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .tab-content > .tab-pane {
+        display: block;
+        opacity: 1;
+    }
+
+    body {
+        font-size: 10pt;
+    }
+
+    .table {
+        font-size: 8pt;
+    }
+
+    .property-section {
+        page-break-inside: avoid;
+    }
+}
